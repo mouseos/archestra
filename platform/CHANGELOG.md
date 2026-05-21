@@ -1,5 +1,45 @@
 # Changelog
 
+## [1.2.51](https://github.com/archestra-ai/archestra/compare/platform-v1.2.50...platform-v1.2.51) (2026-05-21)
+
+
+### Features
+
+* add configurable chat context compaction ([#4535](https://github.com/archestra-ai/archestra/issues/4535)) ([dabdb34](https://github.com/archestra-ai/archestra/commit/dabdb34d52a2ad86d75ac68e08b0fd150a65fd3a))
+* **catalog:** add Sensitive column to MCP Headers table ([#4840](https://github.com/archestra-ai/archestra/issues/4840)) ([11ac36b](https://github.com/archestra-ai/archestra/commit/11ac36b1d984623221b575668464fc5ee4b8593e))
+* **catalog:** share cascade-reinstall decision between frontend and backend ([#4841](https://github.com/archestra-ai/archestra/issues/4841)) ([ea8e400](https://github.com/archestra-ai/archestra/commit/ea8e40064a7a2b932b799fc14b5f70371397bfe2))
+* default theme to light ([#4883](https://github.com/archestra-ai/archestra/issues/4883)) ([3eaf14e](https://github.com/archestra-ai/archestra/commit/3eaf14e8ecf023457a8ed9af37b45feb868257c6))
+* **openrouter:** first-class provider support ([#4862](https://github.com/archestra-ai/archestra/issues/4862)) ([c1ffcc9](https://github.com/archestra-ai/archestra/commit/c1ffcc9daa26af560bf039801920df1fa91e5b65))
+* skills ([#4889](https://github.com/archestra-ai/archestra/issues/4889)) ([63854e4](https://github.com/archestra-ai/archestra/commit/63854e48ce5b2296532ee11089c97bb349db6836))
+
+
+### Bug Fixes
+
+* address compaction PR review findings ([#4859](https://github.com/archestra-ai/archestra/issues/4859)) ([b5c3b70](https://github.com/archestra-ai/archestra/commit/b5c3b708197c697f101dd03b581477aae06fd641))
+* **catalog:** auto-seeded Authorization header defaults to sensitive ([#4864](https://github.com/archestra-ai/archestra/issues/4864)) ([c70ed45](https://github.com/archestra-ai/archestra/commit/c70ed45db3651e7331d82546dd8c4727c68bed87))
+* **catalog:** cascade on static header value changes ([#4873](https://github.com/archestra-ai/archestra/issues/4873)) ([6e2e96c](https://github.com/archestra-ai/archestra/commit/6e2e96c8616dcec4e97f600c50677eecfdd44af3))
+* **catalog:** default installation-scoped env vars and secret files to required ([#4884](https://github.com/archestra-ai/archestra/issues/4884)) ([4417062](https://github.com/archestra-ai/archestra/commit/44170620ad4f41b0da45d5ef1d4a4971f4a722ef))
+* **catalog:** keep user's Sensitive choice when switching header scope ([#4871](https://github.com/archestra-ai/archestra/issues/4871)) ([ce01ae5](https://github.com/archestra-ai/archestra/commit/ce01ae52bf604d26983507be48a919268922a858))
+* **chat:** search palette showing "No recent chats" ([#4845](https://github.com/archestra-ai/archestra/issues/4845)) ([da74b89](https://github.com/archestra-ai/archestra/commit/da74b8918e8f60161a8fa3a6ea9727ef8ebfe017))
+* default model fallback prefers "best" over alphabetically-first ([#4829](https://github.com/archestra-ai/archestra/issues/4829)) ([8207a6d](https://github.com/archestra-ai/archestra/commit/8207a6de1cf2bb7753b1729aa8f2383695a35a00))
+* **e2e:** repair mcp-install bogus-image test against post-[#4402](https://github.com/archestra-ai/archestra/issues/4402)/[#4696](https://github.com/archestra-ai/archestra/issues/4696) UI ([#4706](https://github.com/archestra-ai/archestra/issues/4706)) ([c5ea425](https://github.com/archestra-ai/archestra/commit/c5ea4255331a295ca1b1b04a1c4a3397e39027d8))
+* **e2e:** wait for virtual-key row to disappear before deleting parent key ([#4844](https://github.com/archestra-ai/archestra/issues/4844)) ([7350ce4](https://github.com/archestra-ai/archestra/commit/7350ce4bc32f10ccce2e2a50eeeeeedffbaa8b9e))
+* **mcp-catalog:** truncate long values in env vars and headers tables ([#4879](https://github.com/archestra-ai/archestra/issues/4879)) ([be88a89](https://github.com/archestra-ai/archestra/commit/be88a89e87051923b256ebeb87d583e22ff47b16))
+* **permission-button:** keep icon-size square when tooltipped ([#4885](https://github.com/archestra-ai/archestra/issues/4885)) ([299d6aa](https://github.com/archestra-ai/archestra/commit/299d6aafa3f9d3a8b21f3725780dfa43dc1fbe54))
+* PermissionButton honors flex-1 className when wrapped in tooltip span ([#4834](https://github.com/archestra-ai/archestra/issues/4834)) ([60ca5c3](https://github.com/archestra-ai/archestra/commit/60ca5c3f50bb117d04077645fa7c3a2443f914e3))
+* support mt server reinstall ([#4865](https://github.com/archestra-ai/archestra/issues/4865)) ([3fd343c](https://github.com/archestra-ai/archestra/commit/3fd343cb065e8a02647b8cb250f26d26e4b56b62))
+
+
+### Code Refactoring
+
+* **catalog:** consolidate cascade-reinstall confirm dialogs into inline bar ([#4838](https://github.com/archestra-ai/archestra/issues/4838)) ([bfe9ba8](https://github.com/archestra-ai/archestra/commit/bfe9ba830ceb8ade18689e85dec895d49d0ad37a))
+
+
+### Miscellaneous Chores
+
+* **claude:** extract migration conflict recipe into a skill ([#4857](https://github.com/archestra-ai/archestra/issues/4857)) ([fe90516](https://github.com/archestra-ai/archestra/commit/fe905162812b717ae59a6952feda7ede91d0a08b))
+* **e2e:** skip flaky bogus-image install test ([#4848](https://github.com/archestra-ai/archestra/issues/4848)) ([dcd211d](https://github.com/archestra-ai/archestra/commit/dcd211d55b1e9838801b3e66c3302412e132f41f))
+
 ## [1.2.50](https://github.com/archestra-ai/archestra/compare/platform-v1.2.48...platform-v1.2.50) (2026-05-19)
 
 
